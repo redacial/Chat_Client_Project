@@ -4,7 +4,7 @@ TARGET = chat_client
 
 all: $(TARGET)
 
-$(TARGET): chat_cliet.c
+$(TARGET): chat_client.c
 	$(CC) $(CFLAGS) -o $(TARGET) chat_client.c
 	
 clean:

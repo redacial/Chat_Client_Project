@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define SERVER_IP <vmwardrobe.westmont.edu>
+#define SERVER_IP "vmwardrobe.westmont.edu"
 #define SERVER_PORT 49153
 #define BUFFER_SIZE 1024
 
@@ -39,10 +39,10 @@ int main() {
       exit(EXIT_FAILURE);
   }
 
-  printf("Connected to the chat Sever");
+  printf("Connected to the chat Sever\n");
 
   // Send Username
-  printf("Enter your username");
+  printf("Enter your username ");
   fgets(username, BUFFER_SIZE, stdin);
   username[strcspn(username, "\n")] = 0;
   send(sock, username, strlen(username), 0);
