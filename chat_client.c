@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define SERVER_IP "vmwardrobe.westmont.edu"
+#define SERVER_IP "10.115.12.240"
 #define SERVER_PORT 49153
 #define BUFFER_SIZE 1024
 
